@@ -1,0 +1,1 @@
+COPY* FROM 'locations.csv' WITH (FORMAT csv);
