@@ -5,7 +5,7 @@ AS
 $$
 BEGIN
     INSERT INTO vaccines (vac_name)
-    SELECT DISTINCT vbl_vaccines
+    SELECT DISTINCT unnest(string_to_array(vbl_vaccines, ', '))
     FROM vaccines_by_location
 
     COMMIT;
