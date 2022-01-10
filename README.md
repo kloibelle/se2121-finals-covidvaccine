@@ -1,7 +1,9 @@
 # Data on COVID-19 Vaccinations
-Final Exam for SE 2121 (se2121-finals-covidvaccine).
+Final Exam for SE 2121 (se2121-finals-covidvaccine). <br />
+This COVID-19 database shows the COVID-19 vaccination data. With this database, you can easily search for a country and see the total vaccinations each month per vaccines they have. Another thing, is that it features the top 10 countries with the most no. of vaccinations done in a day.
+For more information regarding the database and its features, you may refer below:
 
-## Datasets
+## DATASETS
 
 ### Location Data
 
@@ -18,7 +20,14 @@ Stored in [`locations.csv`](locations.csv)
 
 Stored in [`vaccinations.csv`](vaccination.csv)
 
-## SQL Files
+* `location`: name of the country (or region within a country).
+* `iso_code`: three-letter country codes.
+* `date`: date of the observation.
+* `total_vaccinations`: total number of doses administered.
+* `daily_vaccinations`: new doses administered per day (7-day smoothed). <br />
+[These were the one used for this project but there's more data given in the file.]
+
+## SQL FILES
 * [`covid_db`](covid_db.sql) : contians the tables 'locations', 'vaccines', 'vaccinations_by_manufacturer', and 'vaccines_by_location'.
 * [`import`](import.sql) : used to import the csv files (datasets) to the tables.
 ### Functions
